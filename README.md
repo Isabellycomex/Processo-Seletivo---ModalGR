@@ -7,8 +7,7 @@
 ### Linguagem de programação e tecnologias que foram usadas para a resolução dos desafios :
 <div style="display: inline_block">
 <br/>
-  <img alt="VSCODE" src=	"https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" align = "center">
-  <img alt="VSCODE" src=	"https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white" align = "center">
+  <img alt="Gitbuh" src=	"https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" align = "center">
 <img alt="java" src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" align = "center">
   <img alt="VSCODE" src="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg" align = "center">
 </div>
