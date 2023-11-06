@@ -2,7 +2,7 @@
 #### Aqui estão anexadas as resoluções dos desafios propostos pela ModalGR, espero que vocês gostem e que eu possa prosseguir neste processo seletivo, desde já agradeço pela oportunidade e pela chance de ter chegado até aqui! :heartpulse:
 <br>
 
-## Os desafios propostos são os seguintes:
+## Os desafios propostos são os seguintes
 
 ### Linguagem de programação e tecnologias que foram usadas para a resolução dos desafios :
 <div style="display: inline_block">
