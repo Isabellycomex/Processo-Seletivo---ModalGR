@@ -20,7 +20,8 @@ public class Emprestimo {
             double valorEmprestimo = scanner.nextDouble();
             double MetadeEmprestimo = 0;
             double metadeEmprestimo = 0;
-            if (anosNaEmpresa > 5 && valorEmprestimo % 2 == 0) {
+            if (anosNaEmpresa > 5) {
+                    if (valorEmprestimo % 2 == 0) {
                 double limiteEmprestimo = salario * 2;
 
                 if (valorEmprestimo <= limiteEmprestimo) {
@@ -47,13 +48,16 @@ public class Emprestimo {
                 } else {
                     System.out.println("Valor de emprestimo excede o limite permitido.");
                 }
+                    }
+                else {
+                     System.out.println("Insira um valor válido (múltiplo de dois).");
+                }
             } else {
                 System.out.println("Agradecemos seu interesse, mas voce nao atende os requisitos minimos do programa.");
             }
 
-            // Verifica se o usuário deseja calcular outro empréstimo
             System.out.print("Deseja calcular outro emprestimo? (s/n): ");
-            scanner.nextLine(); // Limpa o buffer do scanner
+            scanner.nextLine(); 
             String resposta = scanner.nextLine().toLowerCase();
             continuar = resposta.equals("s");
         }
@@ -65,10 +69,18 @@ public class Emprestimo {
     private static void calcularNotasMaiorValor(double valorEmprestimo) {
         int notas100 = (int) (valorEmprestimo / 100);
         int notas50 = (int) ((valorEmprestimo % 100) / 50);
+        int notas20m = (int) (((valorEmprestimo % 100) % 50) / 20);
+        int notas10m = (int) ((((valorEmprestimo % 100) % 50) % 20) / 10);
+        int notas5m = (int) (((((valorEmprestimo % 100) % 50) % 20) % 10) / 5);
+        int notas2m = (int) ((((((valorEmprestimo % 100) % 50) % 20) % 10) % 5) / 2);
 
         System.out.println("Emprestimo em notas de maior valor:");
         System.out.println(notas100 + " x 100 reais");
         System.out.println(notas50 + " x 50 reais");
+        System.out.println(notas20m + " x 20 reais");
+        System.out.println(notas10m + " x 10 reais");
+        System.out.println(notas5m + " x 5 reais");
+        System.out.println(notas2m + " x 2 reais");
     }
 
     private static void calcularNotasMenorValor(double valorEmprestimo) {
@@ -108,3 +120,4 @@ public class Emprestimo {
         System.out.println(notas2 + " x 2 reais");
     }
 }
+
